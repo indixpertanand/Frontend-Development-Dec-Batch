@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Images, List & Tables</title>
+</head>
+
+<body>
+    <header>
+        <h1>HTML Images, List & Tables</h1>
+    </header>
+    <main>
+        <h2>Adding Images</h2>
+        <img width="500" src="../images/sunset-image-1.jpg" alt="sunset">
+        <img width="100" src="https://www.talent.indixpert.com/images/logo/indixpert-logo.svg" alt="sunset">
+
+        <h3>Adding captions to image</h3>
+        <figure>
+            <img width="400"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Wikipedia_and_Encyclop%C3%A6dia_Britannica.jpg/960px-Wikipedia_and_Encyclop%C3%A6dia_Britannica.jpg"
+                alt="A laptop shows this Wikipedia article, beside stacked volumes and an open page of the Encyclopædia Britannica.">
+            <figcaption>A laptop shows this Wikipedia article, beside stacked volumes and an open page of the <a
+                    href="https://en.wikipedia.org/wiki/Encyclop%C3%A6dia_Britannica">Encyclopædia Britannica.</a>
+            </figcaption>
+        </figure>
+
+        <picture>
+            <source media="(min-width: 992px)" srcset="./../images/sunset-image-1.jpg" sizes="500px">
+            <source media="(min-width: 575px)"
+                srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Wikipedia_and_Encyclop%C3%A6dia_Britannica.jpg/960px-Wikipedia_and_Encyclop%C3%A6dia_Britannica.jpg"
+                sizes="500px">
+            <img src="./../images/sunset-image-2.jfif" alt="sunset" width="500">
+        </picture>
+
+
+        <h2>Lists</h2>
+        <h3>Unordered List</h3>
+        <ul type="disc">
+            <li>Mango</li>
+            <li>Grapes</li>
+            <li>Kiwi</li>
+            <li>Pineapple</li>
+        </ul>
+        <h3>Ordered List</h3>
+        <ol type="1">
+            <li>Kiwi</li>
+            <li>Pineapple</li>
+            <li>Mango</li>
+            <li>Grapes</li>
+        </ol>
+        <h3>Definition List</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Hypertext Markup Language</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Styles Sheet</dd>
+            <dt>JS</dt>
+            <dd>JavaScript</dd>
+        </dl>
+
+        <h2>HTML Table</h2>
+        <table border>
+            <thead>
+                <tr>
+                    <th>Employee Name</th>
+                    <th>Designation</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>                
+                <tr>
+                    <td>Sohan</td>
+                    <td>Web Developer</td>
+                    <td>60,000</td>
+                </tr>
+                <tr>
+                    <td>Geeta</td>
+                    <td>Manager</td>
+                    <td>80,000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td colspan="2">Total</td>
+                <td>1,40,000</td>
+            </tfoot>
+        </table>
+        <table border width="400">
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td rowspan="2">2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+
+</html>
