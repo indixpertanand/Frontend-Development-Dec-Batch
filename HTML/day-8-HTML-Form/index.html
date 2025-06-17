@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <header>
+        <h1>HTML Form</h1>
+    </header>
+    <main>
+        <form action="#" method="get">
+            <!-- From Fields -->
+            <!-- <label for="fullname">Name</label> -->
+            <input type="text" value="Anand Singh" autofocus id="fullname" class="form-el" name="user_name" required placeholder="Name"><br/>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="user_email" value="abc@gmail.com" readonly required placeholder="Email"><br/>
+
+            <label for="user_password">Password</label>
+            <input type="password" id="user_password" minlength="8" name="password" ><br/>
+            <label for="pan">PAN</label>
+            <input type="text" id="pan" minlength="10" maxlength="10" name="pan" ><br/>
+            <label for="age">age</label>
+            <input type="number" id="age" name="age" min="18"><br/>
+            <label for="date">Date</label>
+            <input type="date" id="date" min="2020-06-16"  name="date" required><br/>
+
+            <label>Gender</label>
+            <label for="male"><input type="radio" name="gender" id="male" value="m"> Male</label>
+            <label for="female"><input type="radio" name="gender" id="female" value="f" checked>Female</label>
+            <label for="others"><input type="radio" name="gender" id="others" value="o">Others</label>
+            <br/>
+            <label>Skills</label>
+            <label for="language1"><input type="checkbox" name="skills" id="language1" value="C"> C</label>
+            <label for="language2"><input type="checkbox" name="skills" id="language2" checked value="Python">Python</label>
+            <label for="language3"><input type="checkbox" name="skills" id="language3" value="HTML">HTML</label>
+            <label for="language4"><input type="checkbox" name="skill" id="language4" value="CSS">CSS</label>
+            <br/>
+            <label for="resume">Resume</label>
+            <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" ><br/>
+            
+            <!-- <label for="country">Select Country</label> -->
+            <select name="country" id="country">
+                <option value="">Select Country</option>
+                <option value="IN" >India</option>
+                <option value="NP" selected>Nepal</option>
+                <option value="BH">Bhutan</option>
+                <option value="BN">Bangladesh</option>
+                <option value="MN">Mayanmar</option>
+                <option value="PK">Pakistan</option>
+            </select>
+            <br/>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" cols="40">Your Message here...</textarea>
+                <br/>
+            
+            
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+            <button type="button">Normal Button</button>
+        </form>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
