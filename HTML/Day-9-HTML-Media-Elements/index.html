@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Media Elements</title>
+</head>
+
+<body>
+    <header>
+        <h1>HTML Media Elements</h1>
+    </header>
+    <main style="padding-bottom: 100px;">
+        <h2>Audio</h2>
+        <audio controls autoplay muted loop>
+            <source src="https://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assetsSevish_-__nbsp_.mp3">
+            </source>
+            <source src="https://dl.espressif.com/dl/audio/ff-16b-2c-44100hz.mp3">
+            </source>
+        </audio>
+
+        <h2>Video</h2>
+        <video height="250px" width="400"
+            poster="https://images.unsplash.com/photo-1591561582301-7ce6588cc286?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHJhYmJpdHxlbnwwfHwwfHx8MA%3D%3D"
+            controls loop muted>
+            <source src="./videos/SampleVideo_1280x720_1b.mp4">
+            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4">
+            <track kind="subtitles" src="./videos/video2.vtt" srclang="en" label="English">
+            </track>
+            <track kind="subtitles" src="./videos/video2.vtt" srclang="fr" label="French">
+            </track>
+            <track kind="subtitles" src="./videos/video2.vtt" srclang="hi" label="Hindi">
+            </track>
+        </video>
+
+        <h2>SVG</h2>
+        <svg width="400" height="200" style="border: 1px solid #000;">
+            <!-- <rect x="10" y="10" width="200" height="180" fill="red"></rect> -->
+            <circle cx="200" cy="100" r="90" fill="red" />
+        </svg>
+        <!-- <img src="./images/obelisk-silhouette-svgrepo-com.svg" width="100"> -->
+        <svg fill="#000" stroke="red" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 0 457.191 457.191"
+            xml:space="preserve">
+            <g>
+                <path d="M83.242,302.584v38.354h-5.379c-6.903,0-12.5,5.598-12.5,12.5v91.254c0,6.904,5.597,12.5,12.5,12.5h301.465
+		c6.902,0,12.5-5.596,12.5-12.5v-91.254c0-6.902-5.598-12.5-12.5-12.5h-5.379v-38.354c0-6.904-5.598-12.5-12.5-12.5h-12.531h-25.85
+		V98.716c0-3.206-1.23-6.29-3.441-8.613L237.654,3.887C235.295,1.406,232.02,0,228.595,0c-3.425,0-6.699,1.405-9.059,3.887
+		l-81.975,86.216c-2.209,2.324-3.441,5.407-3.441,8.613v191.368h-10.314H95.743C88.839,290.084,83.242,295.68,83.242,302.584z
+		 M366.828,432.191H90.364v-66.254h0.139h5.24h265.706h3.908h1.473v66.254H366.828z M159.121,103.71l69.475-73.069l69.474,73.069
+		v186.374H159.125L159.121,103.71z M123.806,315.084h22.827h163.925h38.359h0.031v25.854H108.242v-25.854H123.806z" />
+            </g>
+        </svg>
+        <h2>Iframe</h2>
+        <h3>HTML Document/Web page</h3>
+        <iframe src="./HTML-Media-Elements.pdf" frameborder="0" width="400" height="750"></iframe>
+        <h3>Youtube Video</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/piKJOD2s8KY?si=Eu37IUJ2xqSLZECz&start=50&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h3>Embed a Map</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.7500570459615!2d77.06132570889936!3d28.45694997565999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19b80c9ebb39%3A0xecc98880a778b34a!2sIndixpert!5e0!3m2!1sen!2sin!4v1750321545428!5m2!1sen!2sin" width="600" height="450" style="border:0;"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    	&#60; &lt; 	&#62; &gt; &#38; &amp; &#8377; &#x20B9;
+    </main>
+</body>
+
+</html>
