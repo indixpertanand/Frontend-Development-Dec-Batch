@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts & Text- Styling</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+        body{
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+            padding-bottom: 100px;
+        }
+        h1, h2{
+            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        }
+
+       
+
+        p{
+            /* font-size: 1rem;
+            font-weight: 400;
+            font-style: oblique;
+            font-variant:small-caps;
+            line-height: 1.5; */
+            font: italic 400 small-caps 1rem/1.4 'Montserrat' ;
+            text-align: justify;
+
+        }
+        span{
+            text-decoration: double underline;
+            text-transform: capitalize;
+            letter-spacing: .1em;
+            text-shadow: 2px 2px 0 red
+        }
+        a:hover{
+            color: red;
+        }
+        a:focus{
+            color: green;
+        }
+        a:visited{
+            color: yellow;
+        }
+        input:valid{
+            border-color: green;
+        }
+        input:invalid{
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Heading</h1>
+        <h2>Heading</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil libero velit iure consectetur obcaecati doloribus! Sapiente nobis magnam illum non.</p>
+        <h2>Heading</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil libero velit iure consectetur obcaecati doloribus! Sapiente nobis magnam illum non.</p>
+        <h2>Heading</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil libero velit iure consectetur obcaecati doloribus! Sapiente nobis magnam illum non.</p>
+        <h2>Heading</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil libero velit iure consectetur obcaecati doloribus! Sapiente nobis magnam illum non.</p>
+        <span>Text-decoration Lorem ipsum dolor sit amet.</span>
+        <a href="//google.com" target="_blank" rel="noopener norefferer">Visit google</a>
+        <a href="//xbox.com" target="_blank" rel="noopener norefferer">Visit xbox</a>
+    <br/>
+    <br/>
+        <form action="#">
+            <input type="text" minlength="4" required>
+            <input type="number" min="4">
+        </form>
+    </main>
+</body>
+</html>

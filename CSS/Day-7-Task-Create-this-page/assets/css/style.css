@@ -1,0 +1,109 @@
+:root{
+    --purple: 116, 13, 225;
+    --blue: 24, 5, 231;
+    --green: 0, 180, 0;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+.gradient-bg{
+    --direction: to right;
+    --alpha: .8;
+    background-image: linear-gradient(var(--direction), rgba(var(--purple), var(--alpha)), rgba(var(--blue), var(--alpha)));
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+.text-center{
+    text-align: center;
+}
+
+.btn{
+    padding: .7rem 1.5rem;
+    border-radius: 3rem;
+    font-size: 1rem;
+    background: rgb(var(--green));
+    color: #fff;
+}
+h2{
+    margin-bottom: 1.5em;
+}
+
+.heading-wrapper{margin-bottom: 5rem;}
+
+
+/* Image */
+.img-responsive{
+    max-width:100%;
+    height: auto;
+}
+
+header{
+    background: url('./../images/evie_default_bg.jpeg') no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
+header .content{
+    max-width: 620px;
+    margin-inline: auto;
+    text-align: center;
+    padding-block: 40vh;
+    
+}
+header h1{
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+header p{
+    line-height: 1.5;
+    margin-bottom: 1.8em;
+}
+
+header a{
+    display: block;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+/* @media screen and (max-width: 1200px){
+    header .content{
+        padding-block: 20vh
+    }
+} */
+
+@media screen and (orientation: portrait) and (max-width: 500px){
+    header .content{
+        padding-block: 15vh
+    }
+}
+
+
+
+.who-can-use{padding-block: 7rem;}
+.who-can-use .content{
+    margin-bottom: 5rem;
+    max-width: 350px;
+    margin-inline: auto;
+}
+.who-can-use h3{
+    font-weight: 400;
+    margin-block: 3rem 1.4rem;
+}
+.who-can-use p{color: #555;}
+.who-can-use img{
+    width: 100%;
+    max-width: 200px;
+}

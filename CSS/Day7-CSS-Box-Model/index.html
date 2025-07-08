@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            display: block;
+            width: 200px;
+            height: 200px;
+            background: #000;
+            color: white;
+            /* padding: 1rem 4rem 4rem 2rem; */
+            /* padding-top: 1rem;
+            padding-right: 4rem;
+            padding-left: 1rem;
+            padding-bottom: 4rem; */
+            padding-block: 1rem;
+            padding-inline: 1rem;
+            /* margin: 3rem 2rem 4rem 3rem; */
+            /* margin-left: 3rem;
+            margin-top: 3rem;
+            margin-right: 2rem;
+            margin-bottom: 4rem; */
+            margin-inline: 3rem 2rem;
+            margin-block: 3rem 4rem;
+            /* border-width: 5px;
+            border-style: groove;
+            border-color: red; */
+            border: 5px dashed red;
+            /* border-left-color: green;
+            border-top-width: 10px;
+            border-right-style: ; */
+            margin-inline: auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, animi dolores! Quod, quaerat maxime? Totam velit hic quia delectus. Assumenda nemo at eos officia, sit fugit sapiente fugiat facere nostrum?</p>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        #special{
+            color: green;
+        }
+        .highlight{
+            color: red;
+        }
+        p{
+            color: blue;
+        }
+        #special:hover{
+            color: yellow;
+        }
+        .text-red{
+            color: red;
+        }
+        .text-purple{
+            color: purple;
+        }
+        h2{
+            color: green !important;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <main>
+        <p class="highlight" id="special">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae consequuntur dolorem eligendi repellat harum architecto quisquam animi deserunt beatae et.</p>
+
+        <h1 class="text-red text-purple ">Heading</h1>
+
+        <h2 style="color: blue;">Heading 2</h2>
+    </main>
+</body>
+</html>

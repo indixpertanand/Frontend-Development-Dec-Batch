@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        *{
+            margin: 0
+        }
+
+        /* Element Selectors */
+        main{
+            padding-bottom: 4rem;
+        }
+        p{
+            margin-bottom: 1rem;
+        }
+        h1, h2{
+            margin-bottom: .6em;
+            color: red;
+        }
+        /* Id Selector */
+        #id-selector{
+            color: blue;
+        }
+        /* Class Selector */
+        .secondary-heading{
+            color: green;
+        }
+        .text-large{
+            font-size: 2.5rem;
+        }
+        /* Group Selector */
+        .secondary-heading,    #id-selector{
+            background-color: lightgray;
+        }
+        /* Attribute Selector */
+        [id]{
+            border: 5px solid red
+        }
+        [readonly]{
+            opacity: .3;
+        }
+        [data-count]{
+            font-size: 4rem;
+        }
+        [data-count="45"]{
+            font-size: 2rem;
+        }
+
+        .secondary-heading[class~="text-large"]{
+            background: yellow;
+        }
+
+        html[lang|="en"]{
+            font-size: 30px;
+        }
+        [aria-label^="click"]{
+          background-color: green;
+          color: white;
+        }
+       
+
+        [class*="ex"]{
+            background: yellow;
+            color: black;
+        }
+        /* Descendent selector */
+        section p{
+            border: 5px solid black
+        }
+        /* Child Selector */
+        section > p{
+            border-color: green;
+        }
+        /* Adjcent sibling selector */
+        p + div{
+            background: red;
+            color: white;
+        }
+        /* General Sibling Selector */
+        p ~ div{
+            padding: 40px
+        }
+
+        /* this
+        is 
+        a
+        multiline 
+        comment */
+        /* p ~ div{
+            padding: 40px
+        } */
+    </style>
+</head>
+<body>
+    <main>
+        <h1 class="text-large ">CSS Selectors</h1>
+        <h2>Universal Selector (*)</h2>
+        <p>Selects all elements</p>
+        <h2>Element Selectors</h2>
+        <p>Selects specified elements in entire HTML Document</p>
+        <h2 id="id-selector">Id Selectors (#id)</h2>
+        <p>Selects element by specified id</p>
+        <h2 class="secondary-heading text-large">Class Selectors (.class-name)</h2>
+        <p>Selects element by specified id</p>
+        <h2 class="secondary-heading">Another Class Example</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, tempore.</p>
+        
+        <div data-count="90" aria-label="click here"> 90</div>
+        <input type="email" aria-label="click here" value="anand@mail.com" readonly>
+        <div data-count="45"  class="dark-text"> 45</div>
+        <section>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, ipsum?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, ipsum?</p>
+            <div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, ipsum?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, ipsum?</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Color & Background</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        p{
+            color: yellowgreen;
+        }
+        .hex-color{
+            color: #f00;
+        }
+        .rgb-color{
+            color: rgb(0, 0, 0);
+        }
+        .hsl-color{
+            color: hsl(0, 0%, 50%);
+        }
+        .box{
+            width: 40%;
+            height: 20rem;
+            background-color: #f00;
+            
+            /* color: #fffa; */
+            /* color: rgba(255, 255, 255, 0); */
+            color: hsl(0, 0%, 100%);
+        }
+        .box p{
+            font-size: 2rem;
+            font-weight: 800;
+            color: inherit;
+        }
+
+        .bg-box{
+            width: 100%;
+            height: 80vh;
+            margin-top: 30px;
+            background-color: black;
+        }
+        .bg-image{
+            /* background-image: url('./image/pexels-souvenirpixels-414612.jpg');
+            background-repeat: repeat-y;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; */
+            background: url('./image/pexels-souvenirpixels-414612.jpg') no-repeat center/cover fixed;
+        }
+        .bg-gradient{
+            /* background-image: linear-gradient(to right, red 50%,green 50% 60%,yellow 60% 75%,  blue 75% ); */
+            /* background-image: radial-gradient(circle at center,  red, green); */
+            /* background-image: repeating-linear-gradient(to right, black , black 20px, white 20px, white 40px) */
+            /* background-image: repeating-radial-gradient( black , black 20px, white 20px, white 40px) */
+            background-image: conic-gradient(at 60% 45%, red 0 90deg, blue 90deg 180deg, green 180deg 270deg, yellow 270deg)
+            /* background-image: repeating-conic-gradient(at 40% 30%, red, red 4deg,  green 4deg, green 8deg, blue 8deg,  12deg) */
+        }
+    </style>
+</head>
+<body>
+    
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam libero sunt ut distinctio fugit dolore ipsum, totam rem consequuntur esse.</p>
+    <p class="hex-color">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam libero sunt ut distinctio fugit dolore ipsum, totam rem consequuntur esse.</p>
+    <p class="rgb-color">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam libero sunt ut distinctio fugit dolore ipsum, totam rem consequuntur esse.</p>
+    <p class="hsl-color">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam libero sunt ut distinctio fugit dolore ipsum, totam rem consequuntur esse.</p>
+
+    <div class="box">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, dolores. Nulla earum expedita</p>
+    </div>
+
+    <div class="bg-box bg-image">
+
+    </div>
+    <div class="bg-box bg-gradient">
+
+    </div>
+</body>
+</html>
