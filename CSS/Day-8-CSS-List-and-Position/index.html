@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS List</title>
+    <style>
+        ul{
+            padding-left: 15px;
+            list-style-type: square;
+        }
+        .list-unstyled{
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ol{
+            list-style-type: upper-alpha;
+            list-style-position: inside;
+        }
+        ol li{
+            margin-bottom: 1rem;
+        }
+        ol li:last-child{
+            margin-bottom: 0rem;
+        }
+        .list-star{
+            list-style-image: url('./icons/check-marksssss.webp');
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <ul>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+            <li>List Item 5</li>
+        </ul>
+        <ol>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+            <li>List Item 5</li>
+        </ol>
+         <ul class="list-star">
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+            <li>List Item 5</li>
+        </ul>
+    </main>
+</body>
+</html>

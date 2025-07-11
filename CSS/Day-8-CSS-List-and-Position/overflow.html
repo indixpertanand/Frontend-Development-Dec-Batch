@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 4px solid red;
+            padding: 10px;
+            /* overflow: auto; */
+            overflow-y: auto;
+            overflow-x: auto;
+        }
+        .box p{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box">
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis neque dignissimos nemo eligendi Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi recusandae nam, amet odit ullam et ratione omnis id dolorum accusantium! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi dolor facilis exercitationem provident amet in? Aliquam ea sequi soluta cupiditate! facilis exercitationem provident amet in? Aliquam ea sequi soluta cupiditate!
+            </p>
+        </div>
+    </main>
+</body>
+</html>
