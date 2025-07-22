@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Masking & Filter</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        /* body{
+            background-color: black;
+        } */
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        .mask-container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2rem;
+        }
+        .image-1{
+            mask-image: url('./images/indixpert-logo.svg');
+            mask-repeat: repeat-y;
+            mask-position: center;
+            /* mask-size: 100%; */
+        }
+        .image-2{
+            mask: conic-gradient( #fff 25%, #fff0 25% 50%, #fff 50% 75%, #fff0 75%) center / 50px 50px, linear-gradient(-120deg, #fff0 45%, #fff 45% 55%, #fff0 55%) center / 50px 50px, linear-gradient(120deg, #fff0 45%, #fff 45% 55%, #fff0 55%) center / 50px 50px,linear-gradient(to bottom, #fff0 45%, #fff 45% 55%, #fff0 55%) center / 50px 50px,linear-gradient(to right, #fff0 45%, #fff 45% 55%, #fff0 55%) center / 50px 50px;
+            mask-composite: exclude;
+            /* mask-repeat: no-repeat; */
+            mask-position: left;
+            /* mask-size: 50px 50px;
+            mask-position: center; */
+        }
+        .box{
+            height: 200px;
+            /* background:conic-gradient( #fff 25%, #fff0 25% 50%, #fff 50% 75%, #fff0 75%) center / 50px 50px, linear-gradient(-120deg, #fff0 45%, #fff 45% 55%, #fff0 55%) center / 50px 50px, linear-gradient(120deg, #fff0 45%, #fff 45% 55%, #fff0 55%) center / 50px 50px,linear-gradient(to bottom, #fff0 45%, #fff 45% 55%, #fff0 55%) center / 50px 50px,linear-gradient(to right, #fff0 45%, #fff 45% 55%, #fff0 55%) center / 50px 50px; */
+            filter:  drop-shadow(10px 10px 20px) ;
+            /* box-shadow: 10px 10px 20px; */
+        }
+        .image{
+            background: radial-gradient(red, transparent);
+            height: 300px;
+        }
+        .circle{
+            width: 40px;
+            height: 40px;            
+            border-radius: 50%;
+            background: #fff;
+            color: #f00;
+            display: grid;
+            place-items: center;
+        }
+        .box:hover .circle{
+            background: red;
+        }
+        .box:hover .circle span{
+            filter:  brightness(0) invert(1);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="mask-container">
+            <div class="image image-1">
+                <!-- <img src="./images/closeup-shot-beautiful-butterfly-with-interesting-textures-orange-petaled-flower.jpg"> -->
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorum labore facere impedit doloremque tenetur qui eum. Debitis non quae, accusamus voluptatem dignissimos quisquam molestiae est consequuntur, cumque modi, vel minima a molestias expedita nobis sapiente autem reprehenderit cum iure?
+            </div>
+            <div class="image image-2">
+                <!-- <img src="./images/closeup-shot-beautiful-butterfly-with-interesting-textures-orange-petaled-flower.jpg"> -->
+            </div>
+            <div class="image image-3">
+                <!-- <img src="./images/closeup-shot-beautiful-butterfly-with-interesting-textures-orange-petaled-flower.jpg"> -->
+            </div>
+            <div class="box">
+                <div class="circle">
+                    <span>2</span>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

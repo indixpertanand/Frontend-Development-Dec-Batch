@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    <style>
+        *{
+            box-sizing: border-box;
+
+        }
+        a{
+            color: black;
+            font-size: 3rem;
+            transition: all 1s ease-out 1s;            
+        }
+        a:hover{
+            color: red;
+            font-size: 4rem;
+        }
+        .container{
+            /* width: 80%; */
+            border: 3px solid black;
+            height: 300px;
+            position: relative;
+        }
+        .box{
+            background: red;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            /* animation-name: moveBox;
+            animation-duration: 3s; */
+            /* animation-iteration-count: infinite; */
+            /* animation-timing-function: ease-in;
+            animation-fill-mode: forwards; */
+            animation: moveBox 3s infinite linear reverse
+        }
+ 
+        @keyframes moveBox {
+            0%{
+                left: 0; top: 0; background-color: red;
+            }
+            35%{
+                left: calc(100% - 100px);
+                top: 0;
+                background: green;
+            }
+            50%{
+                left: calc(100% - 100px);
+                top: calc(100% - 100px);
+                background: blue;
+            }
+            85%{
+                left: 0;
+                top: calc(100% - 100px);
+                background: yellow;
+            }
+            100%{
+               left: 0;
+                top: 0;
+                background: red; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <a href="#">google.com</a>
+
+        <div class="container">
+            <div class="box">
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>

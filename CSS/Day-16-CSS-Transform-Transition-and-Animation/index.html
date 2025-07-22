@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform </title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .transform{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+        .box{
+            background: #f00;
+            aspect-ratio: 1/1;
+            display: grid;
+            place-items: center;
+            color: #fff;
+            border: 2px solid black
+        }
+
+        .translate{
+           /* transform: translate(-30px, 30px);  */
+           transform: translateY(-30px) translateX(-30px); 
+           /* translate: -30px 30px */
+
+        }
+        .scale{
+            transform: scale(1.1);
+            /* scale: 1.5 1.5; */
+            /* transform: scaleX(.5) scaleY(1.4) */
+        }
+        .rotate{
+            transform: rotate(-45deg);
+            /* rotate: 0 1 0 90deg; */
+        }
+        .skew{
+            transform: skewX(-45deg);
+        }
+
+        .composite{
+            transform: skew(10deg);
+            rotate:20deg;
+            translate: 70px;
+            scale: 1.1;
+        }
+
+        .composite:hover{
+            rotate: 0deg;
+            translate: 0px;
+        }
+        .rotate-bottom-right{
+            transform-origin: 100% 100%;
+            rotate: 20deg
+        }
+        .rotate-left-top{
+            transform-origin: 0 0;            
+            rotate: 20deg
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ad expedita velit unde perspiciatis ipsum temporibus at quae ab reprehenderit.</p>
+        <div class="transform">
+            <div class="box translate">
+                translate
+            </div>
+            <div class="box rotate">rotate</div>
+            <div class="box scale">scale</div>
+            <div class="box skew">skew</div>
+            <!-- <div class="box composite">composite</div> -->
+            <div class="box rotate-left-top">composite</div>
+            <div class="box rotate-bottom-right">composite</div>
+        </div>
+    </main>
+</body>
+</html>
